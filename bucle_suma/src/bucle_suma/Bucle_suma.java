@@ -20,7 +20,23 @@ public class Bucle_suma {
         System.out.println("ingresa tu nombre:");
         nombre = datos.nextLine();
         System.out.println("¡Hola " + nombre + "!");
+    class Main {
+
+  public static void main(String[] args) {
+   System.out.println("La sumatoria es: " +  imprimirSecuencia(30, 2, 0));
+  }
+
+  public static int imprimirSecuencia(int limite, int incremento, int inicio) {
+    int sumatoria = 0;
+    for (int numero = inicio; numero <= limite; numero = numero + incremento) {
+      sumatoria += numero;
+      System.out.print(numero + " ");
     }
+  return sumatoria;
+        }
+        
+    }
+   
     
     
 }
